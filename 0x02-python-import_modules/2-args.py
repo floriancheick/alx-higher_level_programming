@@ -14,4 +14,3 @@ elif number > 2:
     while i < number:
         print("{:d}: {}".format((i), value[i]))
         i = i + 1
-        
