@@ -1,0 +1,30 @@
+Module for ''5-text_indentation.py''
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test for text= string
+>>> text = "Holberton.School"
+>>> text_indentation(text)
+Holberton.
+<BLANKLINE>
+School
+
+Test for text= not string
+>>> text = 12
+>>> text_indentation(text)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+Test for text= string with blank line
+>>> text = "   Hey     \n     .     "
+>>> text_indentation(text)
+Hey
+.
+<BLANKLINE>
+
+Test for missing one argument
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
